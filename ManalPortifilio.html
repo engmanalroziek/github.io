@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manal Roziek - Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #F4E1D2; color: #3D2C2E; line-height: 1.6; }
+
+    /* Hero */
+    .hero {
+      min-height: 90vh;
+      background: linear-gradient(135deg, #E07A5F, #81B29A);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      color: #fff;
+    }
+    .hero-inner {
+      max-width: 1100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .hero-text {
+      flex: 1;
+      text-align: center;
+    }
+    .hero-text h1 { font-size: 2.8rem; margin-bottom: 10px; }
+    .hero-text p.subtitle { font-size: 1.2rem; opacity: 0.95; margin-bottom: 18px; }
+    .contact-info { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+    .contact-info a {
+      text-decoration: none; color: #fff; border: 2px solid #fff; border-radius: 24px;
+      padding: 8px 16px; transition: 0.25s;
+    }
+    .contact-info a:hover { background: #fff; color: #E07A5F; box-shadow: 0 6px 18px rgba(0,0,0,0.25); }
+
+    /* Profile image on the right */
+    .hero-image {
+      flex: 0 0 340px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .profile-image {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 6px solid rgba(255,255,255,0.75);
+      box-shadow: 0 0 30px rgba(0,0,0,0.35);
+      object-fit: cover;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+
+    /* USP */
+    .usp {
+      max-width: 1000px; margin: 40px auto; padding: 40px 24px;
+      background: rgba(255,255,255,0.6); backdrop-filter: blur(10px);
+      border-radius: 18px; text-align: center;
+    }
+    .usp h2 { color: #E07A5F; font-size: 2rem; margin-bottom: 12px; }
+    .usp p { font-size: 1.1rem; color: #3D2C2E; }
+
+    /* Skills */
+    .skills { padding: 60px 20px; }
+    .skills h2 { text-align: center; color: #81B29A; font-size: 2rem; margin-bottom: 24px; }
+    .skills-grid {
+      max-width: 1000px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px;
+    }
+    .skill-card {
+      background: rgba(255,255,255,0.55); backdrop-filter: blur(12px);
+      border-radius: 14px; padding: 20px; transition: 0.25s;
+    }
+    .skill-card:hover { transform: translateY(-6px); box-shadow: 0 10px 24px rgba(0,0,0,0.18); }
+    .skill-card h3 { color: #E07A5F; margin-bottom: 10px; }
+    .skill-card ul { list-style: none; }
+    .skill-card li { margin: 6px 0; }
+
+    /* Projects */
+    .projects { padding: 60px 20px; }
+    .projects h2 { text-align: center; color: #E07A5F; font-size: 2rem; margin-bottom: 28px; }
+    .projects-grid {
+      max-width: 1000px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 24px;
+    }
+    .project-card {
+      background: #fff; border-radius: 14px; overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12); transition: 0.25s;
+    }
+    .project-card:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(0,0,0,0.18); }
+    .project-image img { width: 100%; height: 220px; object-fit: cover; }
+    .project-content { padding: 18px; }
+    .project-content h3 { color: #81B29A; margin-bottom: 8px; }
+    .project-content p { color: #3D2C2E; }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(135deg, #E07A5F, #81B29A);
+      color: #fff; text-align: center; padding: 28px 20px; margin-top: 40px;
+      box-shadow: 0 -6px 20px rgba(0,0,0,0.25);
+    }
+    footer p { font-size: 1.05rem; letter-spacing: 0.5px; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Manal Mahmoud Roziek</h1>
+        <p class="subtitle">Electrical Engineer | Software Testing Professional</p>
+        <div class="contact-info">
+          <a href="mailto:engmanalroziek@gmail.com">📧 engmanalroziek@gmail.com</a>
+          <a href="tel:+201063309438">📱 +20 106 330 9438</a>
+          <a href="https://www.linkedin.com/in/manal-roziek" target="_blank">💼 LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img.jpg" alt="Manal Roziek" class="profile-image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- USP -->
+  <section class="usp">
+    <h2>What I Bring</h2>
+    <p>I bring the precision of an Electrical Engineer with strong skills in Python and Java. Responsibility and time management guide my work, ensuring efficiency and reliability in every project. Driven by a passion for continuous learning, I deliver robust solutions with clarity and quality.</p>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills">
+    <h2>Technical Expertise</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <ul>
+          <li>Java (OOP, Polymorphism)</li>
+          <li>Python Fundamentals</li>
+          <li>Constructor Overloading</li>
+          <li>Data Validation</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Testing & QA</h3>
+        <ul>
+          <li>Test Case Design</li>
+          <li>Defect Reporting</li>
+          <li>Code Review</li>
+          <li>Functional Testing</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Tools & Technologies</h3>
+        <ul>
+          <li>JUnit</li>
+          <li>Selenium</li>
+          <li>Git</li>
+          <li>Postman</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div
+<!-- Projects -->
+<section class="projects">
+  <div class="projects-grid">
+
+    <!-- SCADA Project -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="scada.jpg" alt="SCADA System">
+      </div>
+      <div class="project-content">
+        <h3>SCADA System</h3>
+        <p>Developed a monitoring and control system using Delphi to measure electrical values and manage them from a SCADA center.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Delphi</span>
+          <span class="tech-tag">SCADA</span>
+          <span class="tech-tag">Electrical Systems</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bank Project -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="bank.jpg" alt="Bank System">
+      </div>
+      <div class="project-content">
+        <h3>Small Bank System</h3>
+        <p>Built a banking application using Java and OOP principles, focusing on data validation, reliability, and functional testing.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">OOP</span>
+          <span class="tech-tag">Testing</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
