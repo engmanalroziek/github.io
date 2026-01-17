@@ -26,10 +26,7 @@
       justify-content: space-between;
       gap: 40px;
     }
-    .hero-text {
-      flex: 1;
-      text-align: center;
-    }
+    .hero-text { flex: 1; text-align: center; }
     .hero-text h1 { font-size: 2.8rem; margin-bottom: 10px; }
     .hero-text p.subtitle { font-size: 1.2rem; opacity: 0.95; margin-bottom: 18px; }
     .contact-info { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
@@ -39,16 +36,10 @@
     }
     .contact-info a:hover { background: #fff; color: #E07A5F; box-shadow: 0 6px 18px rgba(0,0,0,0.25); }
 
-    /* Profile image on the right */
-    .hero-image {
-      flex: 0 0 340px;
-      display: flex;
-      justify-content: flex-end;
-    }
+    /* Profile image */
+    .hero-image { flex: 0 0 340px; display: flex; justify-content: flex-end; }
     .profile-image {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
+      width: 300px; height: 300px; border-radius: 50%;
       border: 6px solid rgba(255,255,255,0.75);
       box-shadow: 0 0 30px rgba(0,0,0,0.35);
       object-fit: cover;
@@ -97,6 +88,11 @@
     .project-content { padding: 18px; }
     .project-content h3 { color: #81B29A; margin-bottom: 8px; }
     .project-content p { color: #3D2C2E; }
+    .project-tech { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .tech-tag {
+      background: linear-gradient(135deg, #E07A5F, #81B29A);
+      color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem;
+    }
 
     /* Footer */
     footer {
@@ -152,61 +148,4 @@
           <li>Test Case Design</li>
           <li>Defect Reporting</li>
           <li>Code Review</li>
-          <li>Functional Testing</li>
-        </ul>
-      </div>
-      <div class="skill-card">
-        <h3>Tools & Technologies</h3>
-        <ul>
-          <li>JUnit</li>
-          <li>Selenium</li>
-          <li>Git</li>
-          <li>Postman</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="projects">
-    <h2>Featured Projects</h2>
-    <div class="projects-grid">
-      <div
-<!-- Projects -->
-<section class="projects">
-  <div class="projects-grid">
-
-    <!-- SCADA Project -->
-    <div class="project-card">
-      <div class="project-image">
-        <img src="scada.jpg" alt="SCADA System">
-      </div>
-      <div class="project-content">
-        <h3>SCADA System</h3>
-        <p>Developed a monitoring and control system using Delphi to measure electrical values and manage them from a SCADA center.</p>
-        <div class="project-tech">
-          <span class="tech-tag">Delphi</span>
-          <span class="tech-tag">SCADA</span>
-          <span class="tech-tag">Electrical Systems</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bank Project -->
-    <div class="project-card">
-      <div class="project-image">
-        <img src="bank.jpg" alt="Bank System">
-      </div>
-      <div class="project-content">
-        <h3>Small Bank System</h3>
-        <p>Built a banking application using Java and OOP principles, focusing on data validation, reliability, and functional testing.</p>
-        <div class="project-tech">
-          <span class="tech-tag">Java</span>
-          <span class="tech-tag">OOP</span>
-          <span class="tech-tag">Testing</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+          <li>
